@@ -378,11 +378,18 @@
 
         <!-- Medical Information -->
         <section class="medical-info">
-            <h2>Medical Condition</h2>
-            <div class="highlight-box">
-                <p><strong>Important:</strong> Please verify the exact medical diagnosis with Omkar or his medical team, as the specific condition mentioned may need clarification from medical professionals.</p>
-            </div>
-            <p>Omkar has been battling a serious medical condition for several years that has significantly impacted his daily life and development. The condition has severely hindered his normal growth and weight gain, leaving him much smaller and thinner than other children his age.</p>
+            <h2>About Pyritis</h2>
+            <p>Pyritis is a rare, lifelong bacterial infection caused by <em>Pyrus bytus</em>, a highly adaptive pathogen known for its ability to evade immune responses and establish a persistent presence in the body. Upon infection, the bacterium induces a sustained high fever, reconfiguring the host's internal conditions to better suit its own survival.</p>
+            
+            <p>This fever is not merely a symptom but a mechanism of control, allowing <em>Pyrus bytus</em> to suppress immune function and maintain systemic dominance. The infection interferes with nutrient absorption and hormonal balance, often resulting in stunted growth, chronic malnourishment, fatigue, nausea, and episodes of fainting.</p>
+            
+            <p>Due to its deep integration with the host's physiology, pyritis cannot be fully eradicated; instead, patients require continuous antimicrobial therapy and immune-modulating treatments to manage flare-ups and prevent organ deterioration. Without strict, lifelong treatment, the bacterium can cause progressive damage to multiple systems, significantly reducing quality of life and increasing vulnerability to secondary infections.</p>
+        </section>
+
+        <!-- Omkar's Condition -->
+        <section class="medical-info">
+            <h2>Omkar's Battle with Pyritis</h2>
+            <p>Omkar has been battling pyritis for several years, and the condition has significantly impacted his daily life and development. The disease has severely hindered his normal growth and weight gain, leaving him much smaller and thinner than other children his age.</p>
             <p>The illness has made physical activities extremely difficult and exhausting for Omkar, confining him primarily to indoor activities. While this limits his ability to play outside like other kids, he has found comfort and friendship through online gaming, especially his beloved Roblox game "Grow a Garden."</p>
             <p>Treatment needs include:</p>
             <ul>
@@ -433,19 +440,15 @@
             <div class="photo-grid">
                 <div class="photo-item">
                     <img src="images/omkar-1.jpg" alt="Omkar">
-                    <!-- Replace with: <img src="path/to/photo1.jpg" alt="Omkar"> -->
                 </div>
                 <div class="photo-item">
                     <img src="images/omkar-2.jpg" alt="Omkar">
-                    <!-- Replace with: <img src="path/to/photo2.jpg" alt="Omkar"> -->
                 </div>
                 <div class="photo-item">
                     <img src="images/omkar-3.jpg" alt="Omkar">
-                    <!-- Replace with: <img src="path/to/photo3.jpg" alt="Omkar"> -->
                 </div>
                 <div class="photo-item">
                     <img src="images/omkar-4.jpg" alt="Omkar">
-                    <!-- Replace with: <img src="path/to/photo4.jpg" alt="Omkar"> -->
                 </div>
             </div>
         </section>
@@ -468,10 +471,12 @@
             if (amount === 'custom') {
                 const customAmount = prompt('Enter your donation amount:');
                 if (customAmount && !isNaN(customAmount) && customAmount > 0) {
-                    alert(`Thank you for your generous donation of $${customAmount}!\n\nPlease replace this with your actual payment processing system.`);
+                    alert(`Thank you for wanting to donate ${customAmount} to help Omkar!\n\nTo complete your donation, please call:\n+1 470-361-2948\n\nWe'll help you process your generous contribution.`);
+                } else if (customAmount !== null) {
+                    alert('Please enter a valid donation amount.');
                 }
             } else {
-                alert(`Thank you for your generous donation of $${amount}!\n\nPlease replace this with your actual payment processing system.`);
+                alert(`Thank you for wanting to donate ${amount} to help Omkar!\n\nTo complete your donation, please call:\n+1 470-361-2948\n\nWe'll help you process your generous contribution.`);
             }
         }
 
